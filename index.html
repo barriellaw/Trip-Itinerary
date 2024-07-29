@@ -27,17 +27,42 @@
             display: inline-block;
             text-align: left;
         }
-        .login-button input {
-            margin: 10px;
-        }
+        .login-button input,
+.login-button button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-button p {
+    margin: 10px;
+}
+
+.login-button button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+.login-button button:hover {
+    background-color: #0056b3;
+}
         </style>
     </head>
     <body>
         <div class="login-button">
-            <input type="text" placeholder="Enter username">
-            <input type="text" placeholder="enter password">
-            <button>log in</button>
-            <p>If you don't have an account <button>Sign up!</button></p>
+            <input type="text" id="username" placeholder="Enter username">
+            <input type="text" id="password" placeholder="enter password">
+            <button onclick="login">log in</button>
+            <p>If you don't have an account <button onclick="register">Sign up!</button></p>
         </div>
         <div style="text-align: center;">
         <h1>Road Trip Itinerary from NYC to Provintown MA</h1>
