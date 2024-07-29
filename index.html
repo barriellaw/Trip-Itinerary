@@ -31,14 +31,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 20px;
-            flex-direction: column;
+            height: 100vh;
         }
         .login-button {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 20px; /* Space between elements */
+            gap: 10px; /* Space between elements */
         }
         .login-button input,
         .login-button button {
@@ -56,8 +54,12 @@
         .login-button button:hover {
             background-color: #0056b3;
         }
-        .login-button p {
-            margin: 10px;
+        .login-button a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .login-button a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -66,7 +68,9 @@
         <div class="login-button">
             <input type="text" id="username" placeholder="Enter username">
             <input type="password" id="password" placeholder="Enter password">
-            <p><a href="register.html">Log in!</a></p>>
+            <button onclick="login()">Log In</button>
+        </div>
+        <div class="login-button">
             <p>If you don't have an account <a href="register.html">register here</a></p>
         </div>
     </div>
