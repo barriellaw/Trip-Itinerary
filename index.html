@@ -27,23 +27,54 @@
             display: inline-block;
             text-align: left;
         }
-       
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+        .login-container {
+            margin-right: 20px;
+        }
+        .login-button {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .login-button input,
+        .login-button button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-button button {
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+        }
+        .login-button button:hover {
+            background-color: #0056b3;
+        }
+        .login-button a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .login-button a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-button">
-            <input type="text" id="username" placeholder="Enter username">
-            <input type="password" id="password" placeholder="Enter password">
-
-            <br>
-            
-            <p><a href="register.html">login</a></p>
-            <p>If you don't have an account <a href="register.html">register here</a></p>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-button">
+                <input type="text" id="username" placeholder="Enter username">
+                <input type="password" id="password" placeholder="Enter password">
+                <button onclick="login()">Log In</button>
+                <p>If you don't have an account <a href="register.html">register here</a></p>
+            </div>
         </div>
-    </div>
-
-    <br>
     
     <div style="text-align: center;">
         <h1>Road Trip Itinerary from NYC to Provincetown MA</h1>
