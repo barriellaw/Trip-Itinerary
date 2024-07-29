@@ -31,12 +31,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
             height: 100vh;
+            flex-direction: column;
+        }
+        .login-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Space between elements */
         }
         .login-button input,
         .login-button button {
-            margin: 10px;
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ccc;
@@ -62,7 +67,10 @@
             <input type="text" id="username" placeholder="Enter username">
             <input type="password" id="password" placeholder="Enter password">
             <button onclick="login()">Log In</button>
-            <p>If you don't have an account <button onclick="register()">Sign Up!</button></p>
+        </div>
+        <div class="login-button">
+            <p>If you don't have an account </p>
+            <button onclick="register()">Sign Up!</button>
         </div>
     </div>
     <div style="text-align: center;">
