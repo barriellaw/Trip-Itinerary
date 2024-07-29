@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css" />
-        <title>Trip Itinerary</title>
-        <style>
-            .checked {
-                text-decoration: line-through;
-            }
-            li {
-                display: flex;
-                align-items: center;
-            }
-            li input[type="checkbox"] {
-                margin-right: 10px;
-            }
-            .day-container {
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Trip Itinerary</title>
+    <style>
+        .checked {
+            text-decoration: line-through;
+        }
+        li {
+            display: flex;
+            align-items: center;
+        }
+        li input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .day-container {
             text-align: center;
             margin-bottom: 20px;
         }
@@ -27,48 +27,48 @@
             display: inline-block;
             text-align: left;
         }
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
         .login-button input,
-.login-button button {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.login-button {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.login-button p {
-    margin: 10px;
-}
-
-.login-button button {
-    cursor: pointer;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-}
-
-.login-button button:hover {
-    background-color: #0056b3;
-}
-        </style>
-    </head>
-    <body>
-        <div class="login-button" style="text-align: center;">
+        .login-button button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-button button {
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+        }
+        .login-button button:hover {
+            background-color: #0056b3;
+        }
+        .login-button p {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-button">
             <input type="text" id="username" placeholder="Enter username">
-            <input type="text" id="password" placeholder="enter password">
-            <button onclick="login">log in</button>
-            <p>If you don't have an account <button onclick="register">Sign up!</button></p>
+            <input type="password" id="password" placeholder="Enter password">
+            <button onclick="login()">Log In</button>
+            <p>If you don't have an account <button onclick="register()">Sign Up!</button></p>
         </div>
-        <div style="text-align: center;">
-        <h1>Road Trip Itinerary from NYC to Provintown MA</h1>
+    </div>
+    <div style="text-align: center;">
+        <h1>Road Trip Itinerary from NYC to Provincetown MA</h1>
         <img src="travel.jpg" alt="Travel Image">
-        </div>
-        <div>
+    </div>
 
             <div class="day-container">
         <h3>Day 1: Monday</h3>
