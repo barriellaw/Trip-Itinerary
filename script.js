@@ -9,7 +9,7 @@ function login() {
     }
 
     // Navigate to a new page (for demonstration purposes)
-    window.location.href = "home.html"; // Change this to your desired page
+    window.location.href = "register.html"; // Change this to your desired page
 }
 
 document.addEventListener("DOMContentLoaded", function() {
